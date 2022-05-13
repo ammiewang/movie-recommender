@@ -1,0 +1,182 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+h1 {
+  font-size: 72px;
+  margin-bottom: 20px;
+}
+.movie {
+  max-width: 70vw;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+
+.delete-box {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.delete-content {
+  background-color: white;
+  margin: 20% auto;
+  padding: 20px;
+  width: max(200px, 30%);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.delete-yes {
+  margin-right: 5px;
+}
+
+.dropbtn {
+  /* background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none; */
+  cursor: pointer;
+  height: 50px;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  /* background-color: #2980B9; */
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content p, .modal-text {
+  color: black;
+}
+/* Links inside the dropdown */
+.dropdown-content p:hover {
+  background-color: gray;
+}
+
+.centered {
+  justify-content: center;
+}
+.searchbar {
+  justify-content: center;
+  height: 50px;
+  flex: 1;
+}
+
+.movie-data {
+  margin-bottom: 10px;
+}
+.movie-title {
+  font-size: 30px;
+}
+
+.expand-button {
+  margin-right: 10px;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.img-wrapper {
+  margin-bottom: 20px;
+}
+
+#movie-img {
+  text-align: center;
+}
+
+#search-box-btn {
+  flex: 1;
+}
+
+#pageTitle {
+  text-align: center;
+}
+
+#search-box {
+  /* width:60vh; */
+  height: 50px;
+  flex: 1;
+}
+
+#recommend-btn {
+  height: 50px;
+}
